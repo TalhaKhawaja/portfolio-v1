@@ -4,7 +4,6 @@ import { Toolbar, Slide, makeStyles, useScrollTrigger } from '@material-ui/core'
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Nav from './nav.component';
-import '../assets/styles/header.scss';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -26,7 +25,7 @@ HideOnScroll.propTypes = {
 
 const appBarStyles = makeStyles({
   root: {
-    backgroundColor: "rgba(10, 25, 47, 0.85)",
+    backgroundColor: "rgba(10, 25, 47, 0.25)",
     backdropFilter: "blur(5px)",
     //boxShadow: "none"
   }
@@ -54,7 +53,7 @@ const Header = (props) => {
               {/* <Link to="/">About</Link>
               <Link to="/portfolio">Projects</Link>
               <Link to="/contact">Contact</Link> */}
-              <Nav></Nav>
+              <Nav />
             </Toolbar>
           </AppBar>
         </HideOnScroll>

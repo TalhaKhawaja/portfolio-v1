@@ -4,7 +4,7 @@ import '../assets/styles/sections.scss';
 const Experience = () => {
 
   return (
-    <section className="section">
+    <section>
         <div>
             <h1>Experience Section</h1>
         </div>

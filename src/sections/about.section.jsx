@@ -4,7 +4,7 @@ import '../assets/styles/sections.scss';
 const About = () => {
 
   return (
-    <section className="section">
+    <section>
         <div>
             <h1>About Section</h1>
         </div>
