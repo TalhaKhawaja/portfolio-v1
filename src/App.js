@@ -5,15 +5,17 @@ import About from './sections/about.section';
 import Experience from './sections/experience.section';
 import Projects from './sections/projects.section';
 import Contact from './sections/contact.section';
+import Sections from './components/sections.component';
 class App extends React.Component {
   render() {
     return (
       <div className="App-header">
         <Header />
-        <About />
+        <Sections />
+        {/* <About />
         <Experience />
         <Projects />
-        <Contact />
+        <Contact /> */}
         {/* <Switch>
           <Route exact path='/' render={() => <HomePage />}></Route>
           <Route path='/portfolio' render={() => <Portfolio />}></Route>

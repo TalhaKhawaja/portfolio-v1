@@ -25,23 +25,13 @@ HideOnScroll.propTypes = {
 
 const appBarStyles = makeStyles({
   root: {
-    backgroundColor: "rgba(10, 25, 47, 0.25)",
+    backgroundColor: "rgba(41, 41, 41, 0.25)",
     backdropFilter: "blur(5px)",
-    //boxShadow: "none"
-  }
-});
-
-const linkBtnStyles = makeStyles({
-  root: {
-    display: "flex",
-    flexDirection: "row",
-    
   }
 });
 
 const Header = (props) => {
   const appBarClass = appBarStyles();
-  const linkBtnClass = linkBtnStyles();
 
   return (
     <div className="header">
@@ -49,7 +39,7 @@ const Header = (props) => {
         <CssBaseline />
         <HideOnScroll {...props}>
           <AppBar className={appBarClass.root}>
-            <Toolbar className={linkBtnClass.root}>
+            <Toolbar>
               {/* <Link to="/">About</Link>
               <Link to="/portfolio">Projects</Link>
               <Link to="/contact">Contact</Link> */}

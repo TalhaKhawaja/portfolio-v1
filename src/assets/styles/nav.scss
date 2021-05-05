@@ -12,7 +12,25 @@ ol {
     list-style: none;
 
     li {
-        margin: 0px 5px;
+        margin: 0px 15px;
         position: relative;
+        display: flex;
+        flex-direction: row;
+
+        .arrow-icon {
+            margin: 0px 5px;
+            color: #fb7e14;
+            opacity: 0;
+        }
+
+        a {
+            font-size: 18px;
+            color: #ffff;
+            text-decoration: none;
+        }
+    }
+
+    .nav-items:hover .arrow-icon {
+        opacity: 1;
     }
 }
