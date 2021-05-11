@@ -1,3 +1,20 @@
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    40% {
+      -webkit-transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateX(-10px);
+      transform: translateX(-10px);
+    }
+}
+
 div ol {
     display: flex;
     align-items: center;
@@ -21,16 +38,25 @@ ol {
             margin: 0px 5px;
             color: #fb7e14;
             opacity: 0;
+            width: 26px;
+            height: 26px;
         }
 
         a {
             font-size: 18px;
             color: #ffff;
             text-decoration: none;
+
+            &:hover {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+            }
         }
     }
 
     .nav-items:hover .arrow-icon {
         opacity: 1;
+        animation: bounce 1.0s;
     }
 }
