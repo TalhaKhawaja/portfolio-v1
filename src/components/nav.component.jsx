@@ -3,9 +3,9 @@ import { navLinks } from '../config';
 import { Link } from 'react-router-dom';
 import '../assets/styles/nav.scss';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import { smoothScroll } from '../utils/utils.js'
 
-const Nav = (props) => {
-
+const Nav = () => {
   return (
     <div>
       <ol>
@@ -13,7 +13,7 @@ const Nav = (props) => {
           navLinks.map(({ url, name }, index) => (
             <li className='nav-items' key={index}>
               <ArrowRightAltIcon className='arrow-icon'></ArrowRightAltIcon>
-              <Link to={url}>{name}</Link>
+              <Link onClick={() => smoothScroll(name)} to={url}>{name}</Link>
             </li>
           ))}
       </ol>

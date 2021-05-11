@@ -4,7 +4,7 @@ import '../assets/styles/sections.scss';
 const Projects = () => {
 
   return (
-    <section>
+    <section id='projects'>
         <div>
             <h1>Projects Section</h1>
         </div>
