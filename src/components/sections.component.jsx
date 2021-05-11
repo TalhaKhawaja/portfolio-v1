@@ -2,18 +2,19 @@ import React from 'react';
 import { sections } from '../config';
 import '../assets/styles/sections.scss';
 
-const Sections = (props) => {
+const Sections = () => {
 
   return (
     <div>
-    { sections &&
-    sections.map(({ data }, index) => (
-      <section>
-        <div key={index}>
-          <h1>{data}</h1>
-        </div>
-      </section>
-    ))}
+      { sections &&
+        sections.map(({ name, data }, index) => (
+          <section>
+            <div key={index}>
+              <h1>{name}</h1>
+              <p>{data}</p>
+            </div>
+          </section>
+        ))}
     </div>
   );
 }

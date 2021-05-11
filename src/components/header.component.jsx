@@ -1,8 +1,7 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar';
-import { Toolbar, Slide, makeStyles, useScrollTrigger } from '@material-ui/core';
+import { Toolbar, Slide, makeStyles, useScrollTrigger, CssBaseline } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Nav from './nav.component';
 
 function HideOnScroll(props) {
@@ -34,15 +33,12 @@ const Header = (props) => {
   const appBarClass = appBarStyles();
 
   return (
-    <div className="header">
+    <div>
       <React.Fragment>
         <CssBaseline />
         <HideOnScroll {...props}>
           <AppBar className={appBarClass.root}>
             <Toolbar>
-              {/* <Link to="/">About</Link>
-              <Link to="/portfolio">Projects</Link>
-              <Link to="/contact">Contact</Link> */}
               <Nav />
             </Toolbar>
           </AppBar>

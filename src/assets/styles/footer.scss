@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+        :first-child {
+            padding-left: 20px;
+        }
+
+        :last-child {
+            padding-right: 20px;
+        }
+
+        p {
+            color: white;
+        }
+    }
+}
