@@ -4,16 +4,25 @@
     justify-content: space-between;
 
     div {
-        :first-child {
-            padding-left: 20px;
-        }
-
-        :last-child {
-            padding-right: 20px;
-        }
-
         p {
             color: white;
         }
+    }
+
+    .social-media {
+        margin-left: 15px;
+        a:first-child {
+            padding-right: 10px;;
+        }
+    }
+
+    .email {
+        margin-right: 15px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        fill: white;
     }
 }

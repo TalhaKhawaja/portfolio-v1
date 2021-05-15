@@ -1,17 +1,21 @@
-import React from 'react'
-import '../assets/styles/footer.scss'
+import React from 'react';
+import '../assets/styles/footer.scss';
+import { socialMedia, email } from '../config';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div>
-        <p>Social Media</p>
+      <div className='social-media'>
+        {socialMedia.map((sm, index) => (
+          <a key={index} target='_blank' href={sm.url} rel='noreferrer'>
+            {sm.name === 'LinkedIn' ? <LinkedInIcon className='icon' /> : sm.name === 'GitHub' ? <GitHubIcon className='icon' /> : ''}
+          </a>
+        ))}
       </div>
-      <div>
-        <p>Powered By react</p>
-      </div>
-      <div>
-        <p>Email</p>
+      <div className='email'>
+        <a href={`mailto:${email}`}>{email}</a>
       </div>
     </div>
   );

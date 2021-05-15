@@ -27,15 +27,28 @@ module.exports = {
                 endDate: 'December 2020',
                 jobTitle: 'Software Engineer',
                 employer: 'PowerSchool Group',
-                city: 'Folsom, CA',
-                description: [{
-                    1: 'Worked on PowerSchool Design System internal library to create and refine Polymer and Angular components',
-                    2: 'Worked on Case Management using TypeScript and Polymer to create a functionality that allows users to track a student' / 's progress through the Special Education process.',
-                    3: 'Developed an WPF AES key generator application and back-end encryption process to encrypt and decrypt specific values in the database using C#.',
-                    4: 'Full stack software development using TypeScript, C#, MSSQL, HTML/CSS for our K-12 products.',
-                    5: 'Worked on features and enhancements to Special Programs K-12 web application using C#, ASP.NET and JavaScript.',
-                    6: 'Worked through all phases of the Agile software development life cycle including design, development, testing.'
-                }]
+                city: 'Folsom, CA (Remote)',
+                description: [
+                    'Worked on PowerSchool Design System internal library to create and refine Polymer and Angular components',
+                    'Worked on Case Management using TypeScript and Polymer to create a functionality that allows users to track a student progress through the Special Education process.',
+                    'Developed an WPF AES key generator application and back-end encryption process to encrypt and decrypt specific values in the database using C#.',
+                    'Full stack software development using TypeScript, C#, MSSQL, HTML/CSS for our K-12 products.',
+                    'Worked on features and enhancements to Special Programs K-12 web application using C#, ASP.NET and JavaScript.',
+                    'Worked through all phases of the Agile software development life cycle including design, development, testing.'
+                ]
+            }, {
+                startDate: 'July 2013',
+                endDate: 'Feburary 2016',
+                jobTitle: 'Software Developer',
+                employer: 'SunGard K-12',
+                city: 'Ronkonkoma, NY',
+                description: [
+                    'Developed regulatory web forms in SunGard Special Education application using C#, ASP.NET, JavaScript and MSSQL.',
+                    'Worked on bug tracking, change requests, and task issues using Team Foundation Server.',
+                    'Provided unparalleled support customer support including bug resolution, data fixes and new installations and updates.',
+                    'Worked on data integration between SunGard SIS and Special Education K-12 products.',
+                    'Provided full stack software development using C#, SQL, JavaScript, jQuery, .NET and HTML/CSS'
+                ]
             }]
         }
     ],
@@ -47,7 +60,7 @@ module.exports = {
             name: 'GitHub',
             url: 'https://github.com/talhakhawaja/'
         }
-    ]
-    
+    ],
 
+    email: 'talhanaik@gmail.com',
 }
