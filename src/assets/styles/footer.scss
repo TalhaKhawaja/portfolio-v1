@@ -1,28 +1,40 @@
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
-    div {
-        p {
-            color: white;
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+            p {
+                color: white;
+                text-decoration: none;
+            }
         }
-    }
 
-    .social-media {
-        margin-left: 15px;
-        a:first-child {
-            padding-right: 10px;;
+        .social-media {
+            margin-left: 15px;
+            a:first-child {
+                padding-right: 10px;;
+            }
         }
-    }
 
-    .email {
-        margin-right: 15px;
-    }
+        .email {
+            margin-right: 15px;
 
-    .icon {
-        width: 30px;
-        height: 30px;
-        fill: white;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
     }
 }
