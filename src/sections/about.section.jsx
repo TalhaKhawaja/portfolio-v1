@@ -1,20 +1,20 @@
 import React from 'react';
 import '../assets/styles/sections.scss';
-import { sections } from '../config';
+import { about } from '../config';
 
 
 const About = () => {
-  return (
+  const { additionalInfo, info, intro, salutation } = about;
+
+  return (  
     <section id='about'>
-        {sections &&
-          sections.map(({ about }, index) => (
-            <section>
-              <div key={index}>
-                <h1>{about.salutation}, {about.intro}</h1>
-                <p>{about.info}</p>
-              </div>
-            </section>
-          ))}
+      <section>
+        <div>
+          <h1>{salutation}, {intro}</h1>
+          <p>{info}</p>
+          <p>{additionalInfo}</p>
+        </div>
+      </section>
     </section>
   );
 }
